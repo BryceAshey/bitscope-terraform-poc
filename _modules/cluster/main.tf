@@ -7,7 +7,7 @@ resource "bitscoperm_vlan" "my_network" {
 
 # stand up the 'cluster' - really just a stateful bucket to attach the nodes to
 resource "bitscoperm_cluster" "my_cluster" {
-    name = var.name    
+    name = var.cluster_name    
 }
 
 # roll through the nodes and attach them to the 'cluster' bucket. Assuming some
