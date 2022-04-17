@@ -17,4 +17,5 @@ resource "bitscoperm_node" "my_cluster_nodes" {
     count       = var.node_count
     vlan_id     = bitscoperm_network.my_network.id
     cluster_id  = bitscoperm_cluster.my_cluster.id
+    fan_speed   = "ZZ" # included for an example of setting additional props on nodes.
 }
